@@ -1,0 +1,36 @@
+@import 'ng-zorro-antd/ng-zorro-antd.less';
+@import 'theme.less';
+
+.action-bar {
+  height: 40px;
+  border-top: @border-width-base @border-style-base @border-color-base;
+  line-height: 40px;
+  padding-left: 0.5rem;
+
+  [nz-button] {
+    margin-right: 0.5rem;
+  }
+}
+
+.header {
+  display: flex;
+  padding-right: 0.25rem;
+
+  nz-switch {
+    margin-top: -2px;
+    margin-right: -8px;
+  }
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.ant-collapse .ant-collapse-item-disabled > .ant-collapse-header {
+  color: @text-color;
+  cursor: default;
+}
+
+.ant-tree-child-tree {
+  overflow: initial;
+}

@@ -1,0 +1,54 @@
+@import 'theme.less';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+aside {
+  min-width: 15%;
+  max-width: 85%;
+}
+
+app-split {
+  height: calc(100% - 80px);
+}
+
+main {
+  overflow: auto;
+  background: @content-background;
+  padding: 0.5rem;
+  overflow: auto;
+}
+
+.box {
+  min-height: min-content;
+}
+
+::ng-deep .ant-collapse-content > .ant-collapse-content-box {
+  padding: 0;
+}
+
+::ng-deep .ant-collapse-header {
+  height: 40px;
+  line-height: 15px !important;
+}
+
+::ng-deep nz-form-item[nz-form] {
+  max-width: 50vw;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+::ng-deep nz-collapse {
+  margin-bottom: 0.5rem;
+}
+
+::ng-deep .ant-form-item {
+  margin-bottom: 0.25rem !important;
+}
+
+::ng-deep nz-select {
+  width: 100%;
+}

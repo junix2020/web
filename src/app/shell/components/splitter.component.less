@@ -1,0 +1,16 @@
+@import 'theme.less';
+
+:host {
+  position: relative;
+}
+
+div {
+  flex: 0 0 auto;
+  width: 10px;
+  height: 100%;
+  cursor: col-resize;
+  border-left: @border-width-base @border-style-base @border-color-base;
+  z-index: 20;
+  /* Needed for height:100% without having an explicit height given to the parent */
+  position: absolute;
+}

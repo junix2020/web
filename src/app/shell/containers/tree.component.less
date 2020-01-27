@@ -1,0 +1,33 @@
+@import 'theme.less';
+
+::ng-deep .ant-tree {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+::ng-deep .ant-tree li {
+  padding: 0;
+}
+
+::ng-deep .ant-tree li span.ant-tree-switcher {
+  line-height: 32px;
+}
+
+.tree-node {
+  cursor: pointer;
+  line-height: 32px;
+  display: inline-block;
+  margin: 0 -2000px;
+  padding: 0 2000px;
+}
+
+.active,
+.tree-node.active:hover {
+  background: @primary-color;
+  color: #fff;
+}
+
+.tree-node:hover {
+  background: #e6ebf5;
+}

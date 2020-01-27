@@ -1,0 +1,22 @@
+@import 'theme.less';
+
+.ag-theme-balham.list-box {
+  height: 150px;
+  margin-top: 4px;
+  border: @border-width-base @border-style-base @border-color-base;
+  border-radius: @border-radius-base;
+}
+
+::ng-deep .list-box .ag-body-horizontal-scroll-viewport {
+  overflow: hidden !important;
+}
+
+::ng-deep .list-box .ag-body-horizontal-scroll,
+::ng-deep .list-box .ag-header-viewport,
+::ng-deep .list-box .ag-header {
+  display: none;
+}
+
+div[fxFlex]:first-child {
+  margin-right: 0.5rem;
+}

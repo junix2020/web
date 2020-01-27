@@ -1,0 +1,73 @@
+$ag-icons-path: '../../../node_modules/ag-grid-community/src/styles/ag-theme-balham/icons/';
+$font-size: 14px;
+$font-weight: normal;
+$secondary-font-weight: normal;
+$secondary-font-size: 14px;
+$icon-size: 12px;
+$chrome-background: white;
+$selected-color: #3f51b5;
+$hover-color: #e6ebf5;
+$row-height: 32px;
+$foreground-color: rgba(0, 0, 0, 0.65);
+$icon-color: $foreground-color;
+$alt-icon-color: $foreground-color;
+$header-foreground-color: $foreground-color;
+$selected-color: #3f51b5;
+$hover-color: #e6ebf5;
+$border-color: #d9d9d9;
+$odd-row-background-color: white;
+
+@import '~ag-grid-community/src/styles/ag-grid';
+@import '~ag-grid-community/src/styles/ag-theme-balham/sass/ag-theme-balham';
+
+.ag-theme-balham {
+  overflow: hidden;
+  height: 70vh;
+
+  .ag-row-editing {
+    background: $selected-color;
+  }
+
+  .ag-icon {
+    display: inline-block;
+    content: '';
+    height: 16px;
+    width: 16px;
+    background-size: 16px 16px;
+    filter: opacity(0.8);
+  }
+  .ag-icon-menu:before {
+    background-image: url('~@ant-design/icons-angular/src/inline-svg/outline/menu-fold.svg');
+  }
+  .ag-icon-asc:before {
+    background-image: url('~@ant-design/icons-angular/src/inline-svg/outline/caret-up.svg');
+  }
+  .ag-icon-desc:before {
+    background-image: url('~@ant-design/icons-angular/src/inline-svg/outline/caret-down.svg');
+  }
+  .ag-row {
+    border: none;
+  }
+  .ag-row-focus {
+    color: $foreground-color;
+    background: $hover-color;
+  }
+  .ag-row-selected {
+    color: white;
+    background: $selected-color;
+  }
+  button[ref='btPrevious'],
+  button[ref='btFirst'],
+  button[ref='btNext'],
+  button[ref='btLast'] {
+    height: initial;
+  }
+}
+
+.ag-theme-balham .ag-root {
+  border: none;
+}
+
+.ant-collapse-content-box > .ag-theme-balham {
+  padding: 0;
+}
